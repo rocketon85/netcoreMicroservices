@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  # netcoremicroservices.sqlserver:
+  #   image: mcr.microsoft.com/mssql/server:2022-latest
+
+  netcoremicroservices.apigateway:
+    image: ${DOCKER_REGISTRY-}netcoremicroservicesapigateway
+    build:
+      context: .
+      dockerfile: netcoremicroservices.apigateway/Dockerfile
+
+  netcoremicroservices.auth:
+    image: ${DOCKER_REGISTRY-}netcoremicroservicesauth
+    build:
+      context: .
+      dockerfile: netcoremicroservices.auth/Dockerfile
+
+  netcoremicroservices.cars:
+    image: ${DOCKER_REGISTRY-}netcoremicroservicescars
+    build:
+      context: .
+      dockerfile: netcoremicroservices.cars/Dockerfile
+
+  netcoremicroservices.users:
+    image: ${DOCKER_REGISTRY-}netcoremicroservicesusers
+    build:
+      context: .
+      dockerfile: netcoremicroservices.users/Dockerfile
+
+
+  
+

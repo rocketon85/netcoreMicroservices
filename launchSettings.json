@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "netcoremicroservices.cars": "StartDebugging",
+        "netcoremicroservices.users": "StartDebugging",
+        "netcoremicroservices.auth": "StartDebugging",
+        "netcoremicroservices.apigateway": "StartDebugging"
+      }
+    }
+  }
+}

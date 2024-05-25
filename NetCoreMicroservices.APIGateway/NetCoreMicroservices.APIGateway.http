@@ -1,0 +1,6 @@
+@NetCoreMicroservices.APIGateway_HostAddress = http://localhost:5196
+
+GET {{NetCoreMicroservices.APIGateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

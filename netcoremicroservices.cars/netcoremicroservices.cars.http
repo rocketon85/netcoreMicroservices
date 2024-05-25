@@ -1,0 +1,6 @@
+@netcoremicroservices.cars_HostAddress = http://localhost:5193
+
+GET {{netcoremicroservices.cars_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
